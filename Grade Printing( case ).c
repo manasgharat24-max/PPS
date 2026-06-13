@@ -1,0 +1,52 @@
+//Manas Gharat
+//PRN: 2503033111372031
+
+#include <stdio.h>
+int main() { 
+
+    int marks;
+
+    printf("Enter Marks (0-100): ");
+    scanf("%d", &marks);
+
+    switch (marks/10){
+        case 0:
+        case 1:
+        case 2:
+           printf("Grade C\n");
+           break;
+
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+           printf("Grade B\n");
+           break;
+
+        case 7:
+        case 8:
+           printf("Grade A\n");
+           break;
+        
+        case 9:
+           printf("Grade A+\n");
+           break;
+
+        case 10:
+           if (marks == 100)
+              printf("Grade A+\n");
+           break;
+        
+        default:
+           if (marks<0 || marks>100){
+              printf("Invalid Marks!\n");
+              return 1;
+           }
+        }
+        printf("Thank you!");        
+        
+        return 0;
+    }        
+           
+              
+        
